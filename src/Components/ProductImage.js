@@ -5,6 +5,8 @@ import { FaTags } from "react-icons/fa";
 import 'animate.css';
 import Cart from './Cart';
 import {Link} from 'react-router-dom';
+import { FaPlus ,FaMinus } from "react-icons/fa";
+
 import { useNavigate } from 'react-router-dom';
 
 const ProductImage = () => {
@@ -41,9 +43,9 @@ const ProductImage = () => {
           <strong className="text-bold fs-2 price-style" >💲{context.price}</strong>
         </p>
      <div className='row'>
-  <button className='col-lg-6 btn btn-danger fw-bold' onClick={() => context.cartHandler()}>+</button>
-  <p className='text-warning fs-5 fw-bold'>Quantity : {context.qty}</p>
-  <button className='col-lg-6 btn-danger btn fw-bold' onClick={() => context.cartHandler2()}>-</button>
+  <button className='col-lg-6 btn btn-danger fw-bold plus' onClick={() => context.cartHandler()}><FaPlus /></button>
+  <p className='text-warning fs-5 fw-bold qty-size' >Quantity : {context.qty}</p>
+  <button className='col-lg-6 btn-danger btn fw-bold minus' onClick={() => context.cartHandler2()}><FaMinus /></button>
 </div>
 
         <p className="card-text">

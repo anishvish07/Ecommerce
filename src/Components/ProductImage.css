@@ -27,6 +27,14 @@
         padding: 0px 25px;
         background-color: rgb(216, 216, 210);
     }
+    .plus,
+    .minus {
+        width: 70%;
+        margin: auto;
+    }
+    .qty-size {
+        margin-left: 90px;
+    }
 }
 
 .card-size {

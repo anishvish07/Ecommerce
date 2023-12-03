@@ -26,10 +26,38 @@
 }
 
 .qty {
-    margin-left: 65px;
+    margin-left: 25px;
     border: 2px solid black;
     border-radius: 25px;
     padding: 5px 15px;
     color: brown;
     background-color: antiquewhite;
+}
+
+.card-empty {
+    margin-top: 160px;
+    margin-left: 21%;
+    width: 55%;
+    height: 40vh;
+    background-image: url('https://images.pexels.com/photos/2748756/pexels-photo-2748756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.description-emptybox {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cls-btn {
+    margin-left: 25px;
+    margin-bottom: 2px;
+    background-color: rgb(230, 228, 228);
+    box-shadow: 5px rgb(160, 54, 50);
+    font-size: 20px;
+}
+
+.cart-clear {
+    margin-left: 30px;
+    margin-top: 20px;
 }

@@ -6,6 +6,7 @@ import noteContext from '../Context/notes/noteContext';
 import { TbShoppingBagSearch } from "react-icons/tb";
 import { FaArrowRight } from "react-icons/fa6";
 import ProductImage from './ProductImage';
+import Men from './Products/Men'
 const Home = () => {
   const context = useContext(noteContext);
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ const Home = () => {
 <div>
 <div className=' all-btn'>
 <button className=' btn-size'>All</button>
-<button className=' btn-size'>Men</button>
+<button className=' btn-size' onClick={()=>{navigate('/Men')}}>Men</button>
 <button className='btn-size'>Women</button>
 <button className='btn-size'>Accessories</button>
 </div>

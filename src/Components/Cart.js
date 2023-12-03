@@ -1,11 +1,35 @@
 import React, { useContext } from 'react';
 import noteContext from '../Context/notes/noteContext';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Cart.css';
+import { IoMdClose } from "react-icons/io";
 
 const Cart = () => {
   const context = useContext(noteContext);
+  const navigate = useNavigate();
 
+
+    const removeCard = (index) => {
+    context.removeCardFromCart(index);
+  };
+  const clearCart = () => {
+    context.clearCart();
+  };
+
+
+  if(context.cart.length === 0){
+          return(
+            <div class="card text-center card-empty">
+  <div class="card-header text-danger fw-bold fs-4">Anizon- Cart Page</div>
+  <div class="card-body">
+    <h5 class="card-title text-dark fs-2 fw-bold">Add Product To Cart</h5>
+    <p class="card-text text-primary fs-5 description-emptybox mt-5">Explore Our Shopping Website!!.</p>
+    <Link to="/Home" class="btn btn-primary mt-4" data-mdb-ripple-init>Go Back</Link>
+  </div>
+ 
+</div>
+          )
+  }
   return (
     <div className=''style={{marginTop:'90px',}}>
     <div className='adjusts row'>
@@ -18,12 +42,16 @@ const Cart = () => {
               Buy Now
             </Link>
             <span className='qty'>{item.quantity}</span>
+              <button className="btn btn-danger cls-btn btn-close " onClick={() => removeCard(index)}></button>
           </div>
         </div>
       ))}
           
       </div>
-      <button className='btn btn-warning buy-btn'>Order Now</button>
+      <button className='btn btn-warning buy-btn' onClick={()=> navigate('/Order')}>Order Now</button>
+       <button className='btn btn-danger cart-clear' onClick={clearCart}>
+        Clear Cart
+      </button>
     </div>
   );
 };

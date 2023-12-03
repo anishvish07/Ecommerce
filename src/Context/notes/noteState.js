@@ -19,7 +19,7 @@ const NoteState = (props) => {
   const [ rating ,setRating] = useState('');
   const [desc , setDesc] = useState('');
   const [image , setImage] = useState('');
-  const [qty , setQty] = useState(0);
+  const [qty , setQty] = useState(1);
    const [cart, setCart] = useState([]);
 
       const productId = 1;
@@ -36,9 +36,24 @@ const NoteState = (props) => {
       console.log('Product not found');
     }
   }
-  const addProductToCart = (product) => {
-    setCart([...cart, product]);
+const addProductToCart = (product) => {
+  const check = cart.findIndex((item) => item.title === product.title);
+
+  if (check !== -1) {
+    const updateCart = [...cart];
+    updateCart[check].quantity += qty;
+    setCart(updateCart);
+  } else {
+    setCart([...cart, { ...product, quantity: qty  }]);
   }
+  setQty(0);
+};
+
+  const removeCardFromCart = (index) => {
+    const updatedCart = [...cart];
+    updatedCart.splice(index, 1);
+    setCart(updatedCart);
+  };
   const fetchData = async () => {
     try {
       const token = await getAccessTokenSilently();
@@ -71,10 +86,10 @@ const NoteState = (props) => {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      // Redirect to login if not authenticated
+     
       setStatus(false);
     } else {
-      // Handle logic for authenticated state
+   
       setStatus(true);
     }
   }, [isAuthenticated]);
@@ -100,6 +115,10 @@ const NoteState = (props) => {
       console.error('Login failed:', error);
     }
   };
+
+  const clearCart = ()=>{
+    setCart([]);
+  }
 
   const handleLogout = () => {
     // Remove the token from local storage
@@ -139,7 +158,7 @@ console.log('Price:', price);
   };
 
   return (
-    <noteContext.Provider value={{ status,  handleLogin, handleLogout,cartHandler,qty, cartHandler2, addProductToCart,cart ,setImage ,image ,result, fetch, text, texthandler ,desc, setDesc , rating, setRating , price ,  setPrice ,title, setTitle,idx,setIdx, showProductId,product}}>
+    <noteContext.Provider value={{ status,  handleLogin, handleLogout,cartHandler,qty, cartHandler2,clearCart, addProductToCart,cart,removeCardFromCart ,setImage ,image ,result, fetch, text, texthandler ,desc, setDesc , rating, setRating , price ,  setPrice ,title, setTitle,idx,setIdx, showProductId,product}}>
       {props.children}
     </noteContext.Provider>
   );
