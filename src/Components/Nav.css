@@ -1,0 +1,125 @@
+/* Color of the links BEFORE scroll */
+
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scroll .navar-brand {
+    color: #d04e4e;
+}
+
+.navbar-scroll .nav-link:hover {
+    color: #111316;
+}
+
+.text-danger {
+    text-decoration: none;
+    /* Remove the underline */
+    color: inherit;
+}
+
+.nav-link:active {
+    background-color: rgb(114, 108, 108);
+}
+
+.nav-link {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    border-right: 3px solid indigo;
+}
+
+@media (max-width:1023px) {
+    .nav-link {
+        float: right;
+    }
+    .brandName {
+        position: relative;
+        top: auto;
+        left: -25px;
+        text-decoration: none;
+    }
+    .prof-text {
+        font-size: 10px;
+        margin-top: 15px;
+        border-radius: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .prof {
+        margin-top: 5px;
+    }
+}
+
+.navbar {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Color of the links AFTER scroll */
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars,
+.navbar-scrolled .navar-brand {
+    color: #4f4f4f;
+}
+
+
+/* Color of the navbar AFTER scroll */
+
+.navbar-scroll {
+    background-color: rgb(246, 241, 241, 0.8);
+}
+
+.navbar-scrolled {
+    background-color: rgba(221, 219, 219, 0.4);
+}
+
+
+/* An optional height of the navbar AFTER scroll */
+
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+body {
+    background-color: #eee;
+}
+
+.custom-bars-icon {
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    /* Change color as needed */
+    margin-right: 5px;
+    /* Adjust spacing */
+    border-radius: 2px;
+    /* Add rounded corners if desired */
+}
+
+.prof-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.prof-text {
+    font-size: 15px;
+    margin-right: 70px;
+    border: 1px solid rgb(247, 245, 245);
+    border-radius: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.prof {
+    margin-top: 8px;
+}
+
+.img-style {
+    background-color: rgba(238, 236, 236, 0.1);
+    border-radius: 50px;
+}
+
+.door {
+    position: relative;
+    top: 0;
+    right: 100px;
+    margin-left: 0px;
+}

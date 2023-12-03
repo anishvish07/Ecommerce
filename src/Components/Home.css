@@ -1,0 +1,241 @@
+    .adjust {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        position: relative;
+        color: white;
+    }
+    
+    .back-picture {
+        background-color: rgb(212, 203, 206);
+    }
+    
+    .image-size {
+        width: 180px;
+        height: 180px;
+        margin: auto;
+        margin-top: 20px;
+        background-color: rgba(130, 40, 40, 0.4);
+        border: 5px solid black;
+        border-radius: 50px;
+        box-shadow: 0px 15px 15px rgb(9, 7, 7);
+    }
+    
+    .sticky-search {
+        position: sticky;
+        top: 0;
+        background-color: rgba(212, 203, 206);
+        z-index: 1000;
+    }
+    
+    .search-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: sticky;
+        top: 50px;
+        background-color: rgba(212, 203, 206);
+        z-index: 1000;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .grid-items {
+        background-color: white;
+        font-size: small;
+        border-radius: 50px;
+    }
+    
+    .card-texts {
+        border: 4px solid black;
+        width: 60%;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    
+    .cards {
+        height: 350px;
+        background-color: rgba(162, 52, 52);
+        border-radius: 25px 10px 80px;
+    }
+    
+    .adjust-mid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-left: 10px;
+        gap: 50px;
+    }
+    
+    @media (min-width:350px) and (max-width:1024px) {
+        .adjust-mid {
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-left: 10px;
+            gap: 20px;
+            overflow: scroll;
+        }
+        .grid-items {
+            width: 100px;
+            height: 90px;
+            font-size: small;
+            background-color: rgb(228, 218, 218);
+            border-radius: 15px;
+            padding: 5px;
+            opacity: 1;
+            overflow: scroll;
+        }
+        .grid-items2 {
+            border-radius: 25px;
+        }
+        .image-size {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            margin-top: 15px;
+            border-radius: 15px;
+            background-color: rgba(130, 40, 40, 0.4);
+        }
+        .input {
+            width: 250px;
+            height: 45px;
+            margin-left: 30px;
+            margin-top: 10px;
+            border: none;
+            outline: none;
+            padding: 0px 7px;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 15px;
+            background-color: transparent;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 1), -1px -1px 6px rgba(255, 255, 255, 0.4);
+        }
+        .cards {
+            height: 270px;
+        }
+        .btns2 {
+            border-radius: 20px;
+            width: 35%;
+            margin-left: 10px;
+            text-align: center;
+            box-shadow: 20px 0px 20px black;
+            transition: background-color 0.3s;
+        }
+        .btns2:hover {
+            background-color: #96b8d3;
+        }
+        .all-btn {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 8px;
+        }
+        .arrow-size {
+            margin-top: 20px;
+            margin-left: 20px;
+            transition: background-color 0.3s;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(233, 224, 219, 0.3);
+            border-radius: 10px;
+        }
+    }
+    
+    .adjust .label {
+        font-size: 15px;
+        padding-left: 10px;
+        position: absolute;
+        top: 13px;
+        transition: 0.3s;
+        pointer-events: none;
+    }
+    
+    .input {
+        width: 300px;
+        height: 45px;
+        margin-left: 30px;
+        margin-top: 30px;
+        border: none;
+        outline: none;
+        padding: 0px 7px;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 15px;
+        background-color: transparent;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 1), -1px -1px 6px rgba(255, 255, 255, 0.4);
+    }
+    
+    .input:focus {
+        border: 2px solid transparent;
+        color: #fff;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 1), -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0, 0, 0, 1), inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+    }
+    
+    .adjust .input:valid~.label,
+    .adjust .input:focus~.label {
+        transition: 0.3s;
+        padding-left: 2px;
+        transform: translateY(-35px);
+    }
+    
+    .adjust .input:valid,
+    .adjust .input:focus {
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 1), -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0, 0, 0, 1), inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+    }
+    
+    .btns2 {
+        border-radius: 20px;
+        width: 55%;
+        margin-left: 10px;
+        text-align: center;
+        box-shadow: 20px 0px 20px black;
+        transition: box-shadow 0.3s;
+    }
+    
+    .btn-size {
+        font-size: medium;
+        width: auto;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 10px 10px grey;
+        transition: background-color 0.3s;
+    }
+    
+    .btn-size:hover {
+        background-color: rgb(103, 126, 145);
+    }
+    
+    .all-btn {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 8px;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .arrow {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .arrow-size {
+        margin-top: 20px;
+        transition: background-color 0.3s;
+        width: 40px;
+        height: 40px;
+        margin-right: 50px;
+        background-color: rgb(233, 224, 219, 0.3);
+        border-radius: 10px;
+    }
+    
+    .arrow-size:hover {
+        background-color: #96b8d3;
+        /* Darker blue color on hover */
+    }
+    
+    .btns2:hover {
+        box-shadow: 30px 0px 30px black;
+        background-color: #96b8d3;
+    }

@@ -1,0 +1,67 @@
+.adjust2 {
+    margin-top: 70px;
+    height: auto;
+    margin-left: 120px;
+}
+
+@media (min-width: 350px) and (max-width:1024px) {
+    .adjust2 {
+        margin-left: 20px;
+        margin-top: 70px;
+        width: 90%;
+    }
+    .des-style {
+        font-size: 25px;
+    }
+    .price-style {
+        margin-top: 40px;
+    }
+    .title-Style {
+        margin-top: 30px;
+    }
+    .price-style {
+        margin-top: 90px;
+        margin-left: 95px;
+        border: 5px solid olive;
+        width: 100px;
+        padding: 0px 25px;
+        background-color: rgb(216, 216, 210);
+    }
+}
+
+.card-size {
+    width: 85%;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 15px;
+    border: 2px solid rgb(134, 134, 79);
+    box-shadow: 10px 15px rgb(158, 158, 87);
+}
+
+.des-style {
+    font-size: 35px;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-display: unset;
+    margin-top: 30px;
+}
+
+.price-style {
+    margin-top: 90px;
+    margin-left: 65px;
+    border: 5px solid olive;
+    width: 100px;
+    padding: 0px 25px;
+    background-color: rgb(216, 216, 210);
+}
+
+.cart-btn {
+    margin-top: 45px;
+    margin-left: 85px;
+    width: 50%;
+}
+
+.rate {
+    margin-top: 10px;
+    margin-left: 104px;
+}

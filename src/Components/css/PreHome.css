@@ -1,0 +1,184 @@
+.container-fluid {
+    margin-top: 62px;
+    z-index: 1;
+}
+
+.back-pic {
+    background-image: url('cart-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.Headline-border {
+    border-top: 5px solid transparent;
+    border-image: linear-gradient(to right, #ff7e5f, #0a0404, indigo);
+    border-image-slice: 1;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.Headline {
+    font-family: 'Shadows Into Light', serif;
+    font-weight: bold;
+    font-size: 100px;
+    margin-left: 10px;
+    color: rgb(248, 253, 253);
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid rgb(21, 16, 27);
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em;
+    /* Adjust as needed */
+    animation: typing 4.5s steps(40, end) 2 running, blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+}
+
+
+/* Add any other styles as needed */
+
+.door {
+    position: relative;
+    left: 950px;
+    top: 0;
+}
+
+.headline2 pre {
+    color: rgb(7, 10, 10);
+    margin-left: 20px;
+    margin-top: 60px;
+    font-weight: bold;
+    font-family: 'Trirong', serif;
+    font-size: 50px;
+}
+
+@media (min-width:350px) and (max-width:1023px) {
+    .headline2 pre {
+        color: rgb(10, 5, 5);
+        margin-top: 60px;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 40px;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .Headline {
+        width: 350px;
+        font-size: 40px;
+    }
+    .Headline-border {
+        padding: 1px;
+    }
+    .back-pic {
+        background-image: url('cart-img.jpg');
+        background-repeat: no-repeat;
+        text-align: center;
+        height: 100vh;
+    }
+    .cart-size {
+        font-size: 50px;
+    }
+    .buttons {
+        /* padding: 0.1em 0.25em; */
+        width: 13em;
+        height: 4.2em;
+        background-color: #212121;
+        border: 0.08em solid #fff;
+        border-radius: 0.3em;
+        font-size: 12px;
+        position: relative;
+        left: 90px;
+        top: -10px;
+    }
+    .buttons .sections {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0.4em;
+        width: 8.25em;
+        height: 2.5em;
+        background-color: #212121;
+        border-radius: 0.2em;
+        font-size: 1.5em;
+        color: #fff;
+        border: 0.08em solid #fff;
+        box-shadow: 0 0.4em 0.1em 0.019em #fff;
+    }
+}
+
+
+/* .mid-page {
+    background-image: url('https://images.pexels.com/photos/4641824/pexels-photo-4641824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+} */
+
+.buttons {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+    position: relative;
+    right: -1100px;
+    bottom: 250px;
+}
+
+.buttons .sections {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+.buttons .sections:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+}
+
+.buttons .sections:not(hover) {
+    transition: all 1s;
+}
