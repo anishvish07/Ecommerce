@@ -20,3 +20,10 @@
     width: 10%;
     height: 35%;
 }
+
+@media (min-width:350px) and (max-width:1024px) {
+    .order-img {
+        width: 30%;
+        height: 35%;
+    }
+}

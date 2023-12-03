@@ -120,6 +120,6 @@ body {
 .door {
     position: relative;
     top: 0;
-    right: 100px;
-    margin-left: 0px;
+    right: 80px;
+    margin-left: 60px;
 }

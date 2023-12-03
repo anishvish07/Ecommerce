@@ -1,63 +1,74 @@
-.adjusts {
-    margin: auto;
-}
-
-.buy-btn {
-    margin: auto;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 25px;
-}
-
-.cart-card {
-    height: 50%;
-    gap: 8px;
-    margin-right: 60px;
-}
-
-.cart-img {
-    height: 250px;
-}
-
-@media (min-width:350px) and (max-width:1024px) {
     .adjusts {
-        margin-left: 40px;
+        margin: auto;
     }
-}
-
-.qty {
-    margin-left: 25px;
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 5px 15px;
-    color: brown;
-    background-color: antiquewhite;
-}
-
-.card-empty {
-    margin-top: 160px;
-    margin-left: 21%;
-    width: 55%;
-    height: 40vh;
-    background-image: url('https://images.pexels.com/photos/2748756/pexels-photo-2748756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.description-emptybox {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.cls-btn {
-    margin-left: 25px;
-    margin-bottom: 2px;
-    background-color: rgb(230, 228, 228);
-    box-shadow: 5px rgb(160, 54, 50);
-    font-size: 20px;
-}
-
-.cart-clear {
-    margin-left: 30px;
-    margin-top: 20px;
-}
+    
+    .buy-btn {
+        margin: auto;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 25px;
+    }
+    
+    .cart-card {
+        height: 50%;
+        gap: 8px;
+        margin-right: 60px;
+    }
+    
+    .cart-img {
+        height: 250px;
+    }
+    
+    @media (min-width:350px) and (max-width:1024px) {
+        .adjusts {
+            margin-left: 40px;
+        }
+    }
+    
+    .qty {
+        margin-left: 25px;
+        border: 2px solid black;
+        border-radius: 25px;
+        padding: 5px 15px;
+        color: brown;
+        background-color: antiquewhite;
+    }
+    
+    .card-empty {
+        margin-top: 160px;
+        margin-left: 21%;
+        width: 55%;
+        height: 40vh;
+        background-image: url('https://images.pexels.com/photos/2748756/pexels-photo-2748756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .description-emptybox {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .cls-btn {
+        margin-left: 25px;
+        margin-bottom: 2px;
+        background-color: rgb(230, 228, 228);
+        box-shadow: 5px rgb(160, 54, 50);
+        font-size: 20px;
+    }
+    
+    .cart-clear {
+        margin-left: 390px;
+        margin-top: 15px;
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    
+    @media (min-width:350px) and (max-width:1024px) {
+        .cart-clear {
+            margin-left: 105px;
+            margin-top: 15px;
+            width: 50%;
+            margin-bottom: 10px;
+        }
+    }

@@ -6,7 +6,9 @@ import Cart from './Cart';
 import noteContext from '../Context/notes/noteContext';
 import Nav from './Nav';
 import Home from './Home';
-import Men from './Products/Men'
+import Men from './Men';
+import Access from './Access';
+import Women from './Women';
 import {BrowserRouter as Router, Link , Navigate, Routes ,Route } from 'react-router-dom';
 import ProductImage from './ProductImage';
 import Order from './Order';
@@ -24,7 +26,9 @@ const Container = () => {
          <Route exact path='/ProductImage' element={<ProductImage/>}/>
          <Route exact path='/Cart' element={<Cart/>}/>
          <Route exact path='/Order' element={<Order/>}/>
-         <Route exact path='/Men' element={<Men/>}/>
+        <Route exact path='/Men' element={<Men/>}/>
+        <Route exact path='/Women' element={<Women/>}/>
+         <Route exact path='/Access' element={<Access/>}/>
         </Routes>
         </Router>
      

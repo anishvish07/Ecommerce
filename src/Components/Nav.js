@@ -4,6 +4,7 @@ import { Link,useNavigate } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 import noteContext from '../Context/notes/noteContext';
 import { MdAddShoppingCart } from "react-icons/md";
+import 'animate.css';
 const Nav = () => {
     
       const { user, isAuthenticated, isLoading } = useAuth0();
@@ -27,15 +28,15 @@ setLog(null)
   <div >
    
 
-       <img src="./shopping-cart2.png
+       <img  className="animate__animated animate__tada" src="./shopping-cart2.png
     " height="40" alt=""
        />
        
-<img className="door"  src="./door.gif
+{isAuthenticated && <img className="door"  src="./door.gif
     " height="40" alt=""
-       />
+       />}
       </div>
-   <h4 className='brandName my-2' >Anizon</h4>
+   <Link to="/Home" style={{textDecoration: 'none'}} className='text-dark'><h4 className='brandName my-2' >Anizon</h4></Link>
 <button className="navbar-toggler ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample01"
    aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
    <span className="navbar-toggler-icon d-flex justify-content-start align-items-center">
@@ -53,9 +54,9 @@ setLog(null)
     
   )} 
 
-         <li className="nav-item active">
+      {isAuthenticated===false &&    <li className="nav-item active">
           <button className="nav-link"  onClick={ context.handleLogin} >Login</button>
-        </li>
+        </li>}
 {isAuthenticated && (<li className="nav-item active">
           <button className="nav-link" onClick={context.handleLogout} >Logout</button>
         </li>)}

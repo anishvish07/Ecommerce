@@ -1,7 +1,6 @@
 .adjust2 {
     margin-top: 70px;
     height: auto;
-    margin-left: 120px;
 }
 
 @media (min-width: 350px) and (max-width:1024px) {
@@ -33,7 +32,7 @@
         margin: auto;
     }
     .qty-size {
-        margin-left: 90px;
+        margin-left: 35px;
     }
 }
 

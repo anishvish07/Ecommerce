@@ -19,7 +19,7 @@ const ProductImage = () => {
   <div className="row g-0">
     <div className="col-md-4">
     
-      <img style={{height:'70%', marginLeft :'20px', marginTop:'20px',width:'300px' }}
+      <img style={{height:'50%', marginLeft :'20px', marginTop:'20px',width:'300px' }}
         src={context.image}
         alt="Trendy Pants and Shoes"
         className="img-fluid rounded-start "
@@ -44,6 +44,7 @@ const ProductImage = () => {
         </p>
      <div className='row'>
   <button className='col-lg-6 btn btn-danger fw-bold plus' onClick={() => context.cartHandler()}><FaPlus /></button>
+ 
   <p className='text-warning fs-5 fw-bold qty-size' >Quantity : {context.qty}</p>
   <button className='col-lg-6 btn-danger btn fw-bold minus' onClick={() => context.cartHandler2()}><FaMinus /></button>
 </div>

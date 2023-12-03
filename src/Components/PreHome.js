@@ -1,7 +1,6 @@
 import React , {useContext}from 'react';
 import './css/PreHome.css';
 import 'animate.css';
-import SlideShow from './SlideShow';
 import { FaBagShopping } from "react-icons/fa6";
 import { MdShoppingCartCheckout } from "react-icons/md" ; 
 import { useAuth0 } from '@auth0/auth0-react';

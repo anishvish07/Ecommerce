@@ -48,10 +48,12 @@ const Cart = () => {
       ))}
           
       </div>
-      <button className='btn btn-warning buy-btn' onClick={()=> navigate('/Order')}>Order Now</button>
-       <button className='btn btn-danger cart-clear' onClick={clearCart}>
+      <div className='row'>
+      <button className='btn btn-warning buy-btn col-lg-3' onClick={()=> navigate('/Order')}>Order Now</button>
+       <button className='btn btn-danger cart-clear col-lg-3 ' onClick={clearCart}>
         Clear Cart
       </button>
+      </div>
     </div>
   );
 };
