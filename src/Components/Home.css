@@ -75,7 +75,7 @@
         gap: 50px;
     }
     
-    @media (min-width:350px) and (max-width:1024px) {
+    @media (max-width:1024px) {
         .adjust-mid {
             display: grid;
             grid-template-columns: auto auto;
@@ -139,7 +139,7 @@
         }
         .arrow-size {
             margin-top: 20px;
-            margin-left: 20px;
+            margin-left: 8px;
             transition: background-color 0.3s;
             width: 40px;
             height: 40px;

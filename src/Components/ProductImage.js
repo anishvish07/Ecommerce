@@ -19,7 +19,7 @@ const ProductImage = () => {
   <div className="row g-0">
     <div className="col-md-4 " style={{height:"80%"}} >
     
-      <img style={{ marginLeft :'20px', marginTop:'20px',width:'300px' }}
+      <img style={{  marginTop:'20px',width:'300px' }}
         src={context.image}
         alt="Trendy Pants and Shoes"
         className="img-fluid rounded-start img-height "

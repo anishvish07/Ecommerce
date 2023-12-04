@@ -3,7 +3,7 @@
     height: auto;
 }
 
-@media (min-width: 350px) and (max-width:1024px) {
+@media (max-width:1024px) {
     .adjust2 {
         margin-left: 20px;
         margin-top: 70px;
