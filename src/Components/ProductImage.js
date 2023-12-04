@@ -17,13 +17,14 @@ const ProductImage = () => {
         <div classNameName='adjust2'>
 <div className="card mb-3 card-size" >
   <div className="row g-0">
-    <div className="col-md-4">
+    <div className="col-md-4 " style={{height:"80%"}} >
     
-      <img style={{height:'50%', marginLeft :'20px', marginTop:'20px',width:'300px' }}
+      <img style={{ marginLeft :'20px', marginTop:'20px',width:'300px' }}
         src={context.image}
         alt="Trendy Pants and Shoes"
-        className="img-fluid rounded-start "
-      /><button className='cart-btn btn-warning btn ' onClick={()=>{
+        className="img-fluid rounded-start img-height "
+      />
+      <button className='cart-btn btn-warning btn  ' onClick={()=>{
         navigate('/Cart');
         context.addProductToCart({ title: context.title, image: context.image, quantity: context.qty });
         context.cartHandler();
@@ -34,7 +35,7 @@ const ProductImage = () => {
     <div className="col-md-8">
       <div className="card-body">
        
-        <h5 className="card-title animate__animated animate__pulse" style={{ fontFamily:'serif' ,marginLeft:'15px', fontSize:'35px', marginBottom:'30px'}}><FaTags /> {context.title}</h5>
+        <h5 className="card-title animate__animated animate__pulse" style={{ fontFamily:'serif' ,marginLeft:'15px', fontSize:'35px', marginBottom:'10px'}}><FaTags /> {context.title}</h5>
         <p style={{fontSize:'40px' , fontFamily:'sans-serif' ,marginLeft:"10px",color:'brown' ,paddingLeft:'20px'}}>Description:-</p>
         <p className="card-text des-style" style={{fontFamily:"monospace" , marginLeft:'15px',border:'3px solid orange' , borderRadius:'15px' ,textAlign: 'end'}}>
                  {context.desc.slice(0,170)}

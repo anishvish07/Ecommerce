@@ -33,7 +33,7 @@
     .brandName {
         position: relative;
         top: auto;
-        left: -25px;
+        left: -40px;
         text-decoration: none;
     }
     .prof-text {
@@ -45,6 +45,13 @@
     .prof {
         margin-top: 5px;
     }
+}
+
+.brandName {
+    position: relative;
+    top: auto;
+    left: -4 9px;
+    text-decoration: none;
 }
 
 .navbar {

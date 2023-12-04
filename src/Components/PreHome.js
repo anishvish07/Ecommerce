@@ -6,17 +6,11 @@ import { MdShoppingCartCheckout } from "react-icons/md" ;
 import { useAuth0 } from '@auth0/auth0-react';
 import noteContext from '../Context/notes/noteContext';
 
-
-
-
 const PreHome = () => {
  
   const { loginWithRedirect ,logout, isAuthenticated } = useAuth0();
 
    const context = useContext(noteContext);
-
-
-
 
     return (
         <div className='back-pic'>

@@ -36,7 +36,7 @@ setLog(null)
     " height="40" alt=""
        />}
       </div>
-   <Link to="/Home" style={{textDecoration: 'none'}} className='text-dark'><h4 className='brandName my-2' >Anizon</h4></Link>
+   {isAuthenticated && <Link to="/Home" style={{textDecoration: 'none'}} className='text-dark'><h4 className='brandName my-2' >Anizon</h4></Link>}
 <button className="navbar-toggler ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample01"
    aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
    <span className="navbar-toggler-icon d-flex justify-content-start align-items-center">
