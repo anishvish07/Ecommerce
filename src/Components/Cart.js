@@ -24,7 +24,7 @@ const Cart = () => {
   <div class="card-body">
     <h5 class="card-title text-dark fs-2 fw-bold">Add Product To Cart</h5>
     <p class="card-text text-primary fs-5 description-emptybox mt-5">Explore Our Shopping Website!!.</p>
-    <Link to="/Home" class="btn btn-primary mt-4" data-mdb-ripple-init>Go Back</Link>
+    <Link to="/Home" class="btn btn-primary mt-1" data-mdb-ripple-init>Go Back</Link>
   </div>
  
 </div>
