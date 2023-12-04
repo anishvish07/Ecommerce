@@ -21,7 +21,7 @@
     
     @media (min-width:350px) and (max-width:1024px) {
         .adjusts {
-            margin-left: 40px;
+            margin-left: 7%;
         }
     }
     
@@ -64,11 +64,12 @@
         margin-bottom: 10px;
     }
     
-    @media (min-width:350px) and (max-width:1024px) {
+    @media (max-width:1024px) {
         .cart-clear {
-            margin-left: 105px;
+            margin-left: 30%;
             margin-top: 15px;
-            width: 50%;
+            width: 40%;
             margin-bottom: 10px;
+            border-radius: 50px;
         }
     }
