@@ -36,9 +36,9 @@
     
     .card-empty {
         margin-top: 160px;
-        margin-left: 21%;
-        width: 55%;
-        height: 40vh;
+        margin-left: 18%;
+        width: 65%;
+        height: 50vh;
         background-image: url('https://images.pexels.com/photos/2748756/pexels-photo-2748756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-position: center;
         background-repeat: no-repeat;
@@ -58,7 +58,7 @@
     }
     
     .cart-clear {
-        margin-left: 434px;
+        margin-left: 435px;
         margin-top: 15px;
         width: 50%;
         margin-bottom: 10px;
