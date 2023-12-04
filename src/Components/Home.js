@@ -62,7 +62,7 @@ const Home = () => {
 }} className='arrow-size'><FaArrowRight /></button> 
                   </div>
                   <button className='btns2 '><p className='grid-items2 btns' style={{height : '20px'}}>
-                    {resul.price ? <h5 className='text-danger'>${resul.price}</h5> : ""}
+                    {resul.price ? <h5 className='text-danger'>${resul.price.toFixed(1)}</h5> : ""}
                   </p></button>
                 </div>
               </div>
